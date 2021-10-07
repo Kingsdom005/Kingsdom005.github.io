@@ -23,7 +23,7 @@
 <meta property="og:description" content="序偶与笛卡尔乘积 序偶的定义 由两个给定次序的x和y组成的序列称为序偶（二元组，可推广到n元组），记作&lt;x,y&gt;或（x,y)，在第i个位置称为第i分量  序偶的性质 两序偶相等，所有分量必须一一对应相等 有序n元组指由n个给定次序的个体a1到an组成的序列&lt;a1,a2,……,an&gt;  笛卡尔乘积 定义为：设A，B是任意两个集合，取A中元素作为第一元，B中元素作为第二元所构成">
 <meta property="og:locale">
 <meta property="article:published_time" content="2021-10-07T07:00:00.000Z">
-<meta property="article:modified_time" content="2021-10-07T09:05:41.213Z">
+<meta property="article:modified_time" content="2021-10-07T15:34:11.816Z">
 <meta property="article:author" content="Kingsdomli">
 <meta property="article:tag" content="离散数学">
 <meta name="twitter:card" content="summary">
@@ -325,22 +325,52 @@
 </ol>
 <h2 id="映射与函数"><a href="#映射与函数" class="headerlink" title="映射与函数"></a>映射与函数</h2><ol>
 <li><p>定义</p>
-<p>设A，B是任意给定的两个集合，f是从A到B的一个对应法则，对于∀x∈A，∃唯一y∈B与之对应，记作&lt;x,y&gt;∈f，</p>
+<p>设A，B是任意给定的两个集合，f是从A到B的一个对应法则，对于∀ x ∈ A，∃唯一y ∈ B与之对应，记作&lt; x,y &gt; ∈ f，</p>
 <p>则称f是从A到B的一个映射</p>
-<p>对&lt;x,y&gt;∈f，x为像源或自变量，f的定义域记作dom(f)=A，y为f作用在x下的像或函数值，一般用y=f(x)代替&lt;x,y&gt;∈f，</p>
-<p>至于ran(f)=y，且ran(f)={y|y∈B^∃x(x∈A^y=f(x))}</p>
+<p>对&lt; x,y &gt; ∈ f，x为像源或自变量，f的定义域记作dom(f)=A，y为f作用在x下的像或函数值，一般用y=f(x)代替&lt; x,y &gt; ∈ f，</p>
+<p>至于ran(f) = y，且ran(f)={ y | y ∈ B ^ ∃x (x ∈ A ^ y = f(x) ) }</p>
 </li>
 <li><p>构成映射或函数的条件</p>
 <p>定义域内的所有自变量都有唯一对应的一个函数值</p>
-<p>特别地，若给定两个集合A，B，函数&lt;A,B&gt;∈f，则</p>
+<p>特别地，若给定两个集合A，B，函数&lt; A,B &gt; ∈ f，则</p>
 <ul>
 <li>定义域为集合A，而不是A的子集</li>
-<li>函数的值域ranf(A)是集合B的子集，即f(A)⊆B</li>
+<li>函数的值域ranf( A )是集合B的子集，即f( A ) ⊆ B</li>
 <li>函数f的基数等于定义域的基数，即|f(A)|=|B|</li>
-<li>f(x)表示一个函数值，而f是一个函数，表示一个序偶的集合，f(x)≠f</li>
+<li>f(x)表示一个函数值，而f是一个函数，表示一个序偶的集合，f( x ) ≠ f</li>
 </ul>
 </li>
+<li><p>集合间的映射</p>
+<p>设有限集A，B的基分别为m,n，则从A到B共有n<sup>m</sup>个不同的映射</p>
+<p><strong>区别笛卡尔乘积的基！！！</strong></p>
+</li>
+<li><p>举例分析：记A={a,b,c} B={1,2}</p>
+<p>笛卡尔乘积个数：每个元素有两种选择，选择一次，共3x2=6种，列举如下：</p>
+<p>&lt;a,1&gt;,&lt;a,2&gt;,&lt;b,1&gt;,&lt;b,2&gt;,&lt;c,1&gt;,&lt;c,2&gt;</p>
+<p>A、B集合间映射个数为：2<sup>3</sup>=8种，列举如下：</p>
+<p>f0={ &lt; a,1 &gt;,&lt; b,1 &gt;,&lt; c ,1 &gt; }</p>
+<p>f1={ &lt; a , 1 &gt;,&lt; b ,1 &gt;,&lt; c , 2 &gt; }</p>
+<p>f2={ &lt; a ,1 &gt;,&lt; b, 2 &gt;,&lt; c ,1 &gt; }</p>
+<p>f3={ &lt; a ,1&gt;,&lt; b, 2 &gt;,&lt; c ,2 &gt; }</p>
+<p>f4={ &lt; a ,2 &gt;,&lt; b ,1 &gt;,&lt; c ,1 &gt; }</p>
+<p>f5={ &lt; a ,2 &gt;,&lt; b ,1 &gt;,&lt; c , 2 &gt; }</p>
+<p>f6={ &lt; a ,2 &gt;,&lt; b ,2 &gt;,&lt; c ,1 &gt; }</p>
+<p>f7={ &lt; a ,2 &gt;,&lt; b ,2 &gt;,&lt; c ,2 &gt; }</p>
+<p>很容易发现，从A映射到B，每个f里有|A|个位置，每个位置有|B|种选择。</p>
+<p>并且，f<sub>0</sub> U f1 U …… U f7 = { &lt;a,1&gt;,&lt;a,2&gt;,&lt;b,1&gt;,&lt;b,2&gt;,&lt;c,1&gt;,&lt;c,2&gt; }</p>
+</li>
+<li><p><strong>单射、满射、双射函数</strong></p>
+<p>单射：函数一个x对应一个y，可以多个x对应一个y；单射函数只能一个x对应一个y</p>
+<p>满射：满足|A|=|f(A)|=|B|</p>
+<p>双射：满足单射和满射，存在逆函数</p>
+</li>
+<li><p>置换</p>
+<p>若A是有限集合，将A到A的双射称为A上的置换（2x3矩阵形式）</p>
+</li>
 </ol>
+<p>$$<br>\begin{matrix}<br>1&amp;2&amp;3&amp;|&amp;1&amp;2&amp;3&amp;|&amp;1&amp;2&amp;3&amp;|&amp;1&amp;2&amp;3&amp;|&amp;1&amp;2&amp;3&amp;|&amp;1&amp;2&amp;3\<br>1&amp;2&amp;3&amp;|&amp;1&amp;3&amp;2&amp;|&amp;2&amp;1&amp;3&amp;|&amp;2&amp;3&amp;1&amp;|&amp;3&amp;1&amp;2&amp;|&amp;3&amp;2&amp;1\</p>
+<p>\end{matrix}<br>$$</p>
+<p>​        六种置换情况如上</p>
 <p>参考相关符号⊆，∪，∩，∅，^，∈，∉,≠∃∀</p>
 
       
@@ -353,7 +383,7 @@
         <p><span>本文标题:</span><a href="/2021/10/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6-%E7%AC%AC%E4%B8%80%E7%AB%A0-%E9%9B%86%E5%90%88%E3%80%81%E6%98%A0%E5%B0%84%E4%B8%8E%E8%BF%90%E7%AE%971-2/">离散数学_第一章_集合映射与运算1.2</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页"></a></p>
         <p><span>发布时间:</span>2021-10-07, 15:00:00</p>
-        <p><span>最后更新:</span>2021-10-07, 17:05:41</p>
+        <p><span>最后更新:</span>2021-10-07, 23:34:11</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2021/10/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6-%E7%AC%AC%E4%B8%80%E7%AB%A0-%E9%9B%86%E5%90%88%E3%80%81%E6%98%A0%E5%B0%84%E4%B8%8E%E8%BF%90%E7%AE%971-2/" title="离散数学_第一章_集合映射与运算1.2">http://example.com/2021/10/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6-%E7%AC%AC%E4%B8%80%E7%AB%A0-%E9%9B%86%E5%90%88%E3%80%81%E6%98%A0%E5%B0%84%E4%B8%8E%E8%BF%90%E7%AE%971-2/</a>
             <span class="copy-path" data-clipboard-text="原文: http://example.com/2021/10/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6-%E7%AC%AC%E4%B8%80%E7%AB%A0-%E9%9B%86%E5%90%88%E3%80%81%E6%98%A0%E5%B0%84%E4%B8%8E%E8%BF%90%E7%AE%971-2/　　作者: " title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -505,7 +535,7 @@
                 $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
             }
             else {
-                var backgroundnum = 5;
+                var backgroundnum = 6;
                 var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
                 $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
             }

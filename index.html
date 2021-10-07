@@ -319,22 +319,52 @@
 </ol>
 <h2 id="映射与函数"><a href="#映射与函数" class="headerlink" title="映射与函数"></a>映射与函数</h2><ol>
 <li><p>定义</p>
-<p>设A，B是任意给定的两个集合，f是从A到B的一个对应法则，对于∀x∈A，∃唯一y∈B与之对应，记作&lt;x,y&gt;∈f，</p>
+<p>设A，B是任意给定的两个集合，f是从A到B的一个对应法则，对于∀ x ∈ A，∃唯一y ∈ B与之对应，记作&lt; x,y &gt; ∈ f，</p>
 <p>则称f是从A到B的一个映射</p>
-<p>对&lt;x,y&gt;∈f，x为像源或自变量，f的定义域记作dom(f)=A，y为f作用在x下的像或函数值，一般用y=f(x)代替&lt;x,y&gt;∈f，</p>
-<p>至于ran(f)=y，且ran(f)={y|y∈B^∃x(x∈A^y=f(x))}</p>
+<p>对&lt; x,y &gt; ∈ f，x为像源或自变量，f的定义域记作dom(f)=A，y为f作用在x下的像或函数值，一般用y=f(x)代替&lt; x,y &gt; ∈ f，</p>
+<p>至于ran(f) = y，且ran(f)={ y | y ∈ B ^ ∃x (x ∈ A ^ y = f(x) ) }</p>
 </li>
 <li><p>构成映射或函数的条件</p>
 <p>定义域内的所有自变量都有唯一对应的一个函数值</p>
-<p>特别地，若给定两个集合A，B，函数&lt;A,B&gt;∈f，则</p>
+<p>特别地，若给定两个集合A，B，函数&lt; A,B &gt; ∈ f，则</p>
 <ul>
 <li>定义域为集合A，而不是A的子集</li>
-<li>函数的值域ranf(A)是集合B的子集，即f(A)⊆B</li>
+<li>函数的值域ranf( A )是集合B的子集，即f( A ) ⊆ B</li>
 <li>函数f的基数等于定义域的基数，即|f(A)|=|B|</li>
-<li>f(x)表示一个函数值，而f是一个函数，表示一个序偶的集合，f(x)≠f</li>
+<li>f(x)表示一个函数值，而f是一个函数，表示一个序偶的集合，f( x ) ≠ f</li>
 </ul>
 </li>
+<li><p>集合间的映射</p>
+<p>设有限集A，B的基分别为m,n，则从A到B共有n<sup>m</sup>个不同的映射</p>
+<p><strong>区别笛卡尔乘积的基！！！</strong></p>
+</li>
+<li><p>举例分析：记A={a,b,c} B={1,2}</p>
+<p>笛卡尔乘积个数：每个元素有两种选择，选择一次，共3x2=6种，列举如下：</p>
+<p>&lt;a,1&gt;,&lt;a,2&gt;,&lt;b,1&gt;,&lt;b,2&gt;,&lt;c,1&gt;,&lt;c,2&gt;</p>
+<p>A、B集合间映射个数为：2<sup>3</sup>=8种，列举如下：</p>
+<p>f0={ &lt; a,1 &gt;,&lt; b,1 &gt;,&lt; c ,1 &gt; }</p>
+<p>f1={ &lt; a , 1 &gt;,&lt; b ,1 &gt;,&lt; c , 2 &gt; }</p>
+<p>f2={ &lt; a ,1 &gt;,&lt; b, 2 &gt;,&lt; c ,1 &gt; }</p>
+<p>f3={ &lt; a ,1&gt;,&lt; b, 2 &gt;,&lt; c ,2 &gt; }</p>
+<p>f4={ &lt; a ,2 &gt;,&lt; b ,1 &gt;,&lt; c ,1 &gt; }</p>
+<p>f5={ &lt; a ,2 &gt;,&lt; b ,1 &gt;,&lt; c , 2 &gt; }</p>
+<p>f6={ &lt; a ,2 &gt;,&lt; b ,2 &gt;,&lt; c ,1 &gt; }</p>
+<p>f7={ &lt; a ,2 &gt;,&lt; b ,2 &gt;,&lt; c ,2 &gt; }</p>
+<p>很容易发现，从A映射到B，每个f里有|A|个位置，每个位置有|B|种选择。</p>
+<p>并且，f<sub>0</sub> U f1 U …… U f7 = { &lt;a,1&gt;,&lt;a,2&gt;,&lt;b,1&gt;,&lt;b,2&gt;,&lt;c,1&gt;,&lt;c,2&gt; }</p>
+</li>
+<li><p><strong>单射、满射、双射函数</strong></p>
+<p>单射：函数一个x对应一个y，可以多个x对应一个y；单射函数只能一个x对应一个y</p>
+<p>满射：满足|A|=|f(A)|=|B|</p>
+<p>双射：满足单射和满射，存在逆函数</p>
+</li>
+<li><p>置换</p>
+<p>若A是有限集合，将A到A的双射称为A上的置换（2x3矩阵形式）</p>
+</li>
 </ol>
+<p>$$<br>\begin{matrix}<br>1&amp;2&amp;3&amp;|&amp;1&amp;2&amp;3&amp;|&amp;1&amp;2&amp;3&amp;|&amp;1&amp;2&amp;3&amp;|&amp;1&amp;2&amp;3&amp;|&amp;1&amp;2&amp;3\<br>1&amp;2&amp;3&amp;|&amp;1&amp;3&amp;2&amp;|&amp;2&amp;1&amp;3&amp;|&amp;2&amp;3&amp;1&amp;|&amp;3&amp;1&amp;2&amp;|&amp;3&amp;2&amp;1\</p>
+<p>\end{matrix}<br>$$</p>
+<p>​        六种置换情况如上</p>
 <p>参考相关符号⊆，∪，∩，∅，^，∈，∉,≠∃∀</p>
 
       
@@ -730,7 +760,7 @@
                 $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
             }
             else {
-                var backgroundnum = 5;
+                var backgroundnum = 6;
                 var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
                 $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
             }
