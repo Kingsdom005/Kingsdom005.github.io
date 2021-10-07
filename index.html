@@ -294,7 +294,49 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h1 id="集合、映射与运算"><a href="#集合、映射与运算" class="headerlink" title="集合、映射与运算"></a>集合、映射与运算</h1>
+        <h2 id="序偶与笛卡尔乘积"><a href="#序偶与笛卡尔乘积" class="headerlink" title="序偶与笛卡尔乘积"></a>序偶与笛卡尔乘积</h2><ol>
+<li><p>序偶的定义</p>
+<p>由两个给定次序的x和y组成的序列称为序偶（二元组，可推广到n元组），记作&lt;x,y&gt;或（x,y)，在第i个位置称为第i分量</p>
+</li>
+<li><p>序偶的性质</p>
+<p>两序偶相等，所有分量必须一一对应相等</p>
+<p><strong>有序n元组</strong>指由n个给定次序的个体a1到an组成的序列&lt;a1,a2,……,an&gt;</p>
+</li>
+<li><p>笛卡尔乘积</p>
+<p>定义为：设A，B是任意两个集合，取A中元素作为第一元，B中元素作为第二元所构成的所有序偶的集合，</p>
+<p>称为A和B的笛卡尔乘积（又称卡氏积或直积），记作：</p>
+<p>A x B = {  &lt; x , y &gt; | x ∈ A , y ∈ B  }</p>
+<p>若|A| = m，|B| = n，则|A x B| = m x n </p>
+<p>特别地，空集的基数取0 ，即A x ∅ = ∅</p>
+</li>
+<li><p>笛卡尔积的性质</p>
+<ul>
+<li>满足分配律，不满足交换律</li>
+<li>若C ≠ ∅ ，则 A ⊆ B ⇔ (AxC)⊆(BxC) ⇔ (CxA) ⊆ (CxB)</li>
+<li>若A，B，C，D四个集合非空，则AxB⊆CxD当且仅当A⊆C且B⊆D</li>
+</ul>
+</li>
+</ol>
+<h2 id="映射与函数"><a href="#映射与函数" class="headerlink" title="映射与函数"></a>映射与函数</h2><ol>
+<li><p>定义</p>
+<p>设A，B是任意给定的两个集合，f是从A到B的一个对应法则，对于∀x∈A，∃唯一y∈B与之对应，记作&lt;x,y&gt;∈f，</p>
+<p>则称f是从A到B的一个映射</p>
+<p>对&lt;x,y&gt;∈f，x为像源或自变量，f的定义域记作dom(f)=A，y为f作用在x下的像或函数值，一般用y=f(x)代替&lt;x,y&gt;∈f，</p>
+<p>至于ran(f)=y，且ran(f)={y|y∈B^∃x(x∈A^y=f(x))}</p>
+</li>
+<li><p>构成映射或函数的条件</p>
+<p>定义域内的所有自变量都有唯一对应的一个函数值</p>
+<p>特别地，若给定两个集合A，B，函数&lt;A,B&gt;∈f，则</p>
+<ul>
+<li>定义域为集合A，而不是A的子集</li>
+<li>函数的值域ranf(A)是集合B的子集，即f(A)⊆B</li>
+<li>函数f的基数等于定义域的基数，即|f(A)|=|B|</li>
+<li>f(x)表示一个函数值，而f是一个函数，表示一个序偶的集合，f(x)≠f</li>
+</ul>
+</li>
+</ol>
+<p>参考相关符号⊆，∪，∩，∅，^，∈，∉,≠∃∀</p>
+
       
     </div>
     
@@ -457,7 +499,7 @@
 <p><strong>A ⊕ B = （A U B) - (A ∩ B) </strong> = (A∩-B)U(-A∩B) = (A-B)U(B-A)</p>
 </li>
 <li><p>集合恒等式的证明方法</p>
-<p>基本定义法（从元素出发）、文氏图法、公式推演法</p>
+<p><strong>基本定义法（从元素出发）</strong>、文氏图法、公式推演法</p>
 </li>
 </ol>
 <h3 id="计数问题"><a href="#计数问题" class="headerlink" title="计数问题"></a>计数问题</h3><ol>
