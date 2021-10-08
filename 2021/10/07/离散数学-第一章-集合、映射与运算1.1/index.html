@@ -187,7 +187,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hello-world/" rel="tag">hello world</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/" rel="tag">离散数学</a></li></ul>
+                        <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hello-world/" rel="tag">hello world</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%91%B8%E9%B1%BC%E5%A4%A7%E4%BB%99/" rel="tag">摸鱼大仙</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E5%AD%97%E7%94%B5%E8%B7%AF/" rel="tag">数字电路</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/" rel="tag">离散数学</a></li></ul>
                     </div>
                 </section>
                 
@@ -605,7 +605,7 @@
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2021/10/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6-%E7%AC%AC%E4%B8%80%E7%AB%A0-%E9%9B%86%E5%90%88%E3%80%81%E6%98%A0%E5%B0%84%E4%B8%8E%E8%BF%90%E7%AE%971-2/">离散数学_第一章_集合映射与运算1.2</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/10/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6-%E7%AC%AC%E4%B8%80%E7%AB%A0-%E9%9B%86%E5%90%88%E3%80%81%E6%98%A0%E5%B0%84%E4%B8%8E%E8%BF%90%E7%AE%971.1/">离散数学_第一章_集合映射与运算1.1</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/10/06/hello-world/">Hello World</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2021/10/08/%E6%95%B0%E5%AD%97%E7%94%B5%E8%B7%AF/">数字电路</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/10/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6-%E7%AC%AC%E4%B8%80%E7%AB%A0-%E9%9B%86%E5%90%88%E3%80%81%E6%98%A0%E5%B0%84%E4%B8%8E%E8%BF%90%E7%AE%971-2/">离散数学_第一章_集合映射与运算1.2</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/10/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6-%E7%AC%AC%E4%B8%80%E7%AB%A0-%E9%9B%86%E5%90%88%E3%80%81%E6%98%A0%E5%B0%84%E4%B8%8E%E8%BF%90%E7%AE%971.1/">离散数学_第一章_集合映射与运算1.1</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/10/06/hello-world/">Hello World</a></li></ul>
 
 
 
@@ -670,6 +670,27 @@
 
 
 
+    <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
 <div class="scroll" id="scroll">
     <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
     <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
@@ -700,5 +721,21 @@
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<!-- <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+<script src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>
