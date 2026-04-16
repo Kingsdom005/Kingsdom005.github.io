@@ -1,321 +1,383 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Edward Williams | Software Engineer Portfolio</title>
-  <meta name="description" content="Programmer portfolio website for interview showcase" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <div class="page-bg"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edward Williams | Software Engineer Portfolio</title>
+    <meta
+      name="description"
+      content="Programmer portfolio website for interview showcase"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-bg"></div>
 
-  <header class="site-header">
-    <div class="container nav">
-      <a href="#home" class="brand">Edward<span>Williams</span></a>
-      <nav class="nav-links">
+    <header class="site-header">
+      <div class="container nav">
+        <a href="#home" class="brand">Edward<span>Williams</span></a>
+        <nav class="nav-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
-      </nav>
-      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
-    </div>
-    <div class="mobile-menu" id="mobileMenu">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </header>
+      </div>
+    </header>
 
-  <main id="home">
-    <section class="hero section">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <span class="eyebrow">Software Engineer Portfolio</span>
-          <h1>Build reliable products <br><span>with clean engineering.</span></h1>
-          <p class="hero-text">
-            你好，我是 Edward Williams，一名面向软件开发岗位的求职者，关注 Web 开发、工程实现与项目落地。
-            我擅长将需求拆解为可维护、可交付的模块，并通过清晰的代码结构与稳定的实现提升产品体验。
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#projects">View Projects</a>
-            <a class="btn btn-secondary" href="mailto:byhyjtf386@hotmail.com">Email Me</a>
+    <main id="home">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Software Engineer Portfolio</span>
+            <h1>
+              Build reliable products <br /><span>with clean engineering.</span>
+            </h1>
+            <p class="hero-text">
+              你好，我是 Edward
+              Williams，一名面向软件开发岗位的求职者，专注于全栈开发、系统架构与推荐算法。
+              我擅长将复杂需求拆解为可维护、可交付的模块，并通过清晰的代码结构与稳定的实现提升产品体验。
+              近期完成了Douyin视频平台的全栈开发，包括前台、中台和后台系统。
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">View Projects</a>
+              <a class="btn btn-secondary" href="mailto:byhyjtf386@hotmail.com"
+                >Email Me</a
+              >
+            </div>
+            <div class="hero-metrics">
+              <div class="metric-card">
+                <strong>3</strong>
+                <span>Featured Projects</span>
+              </div>
+              <div class="metric-card">
+                <strong>8+</strong>
+                <span>Core Technologies</span>
+              </div>
+              <div class="metric-card">
+                <strong>100%</strong>
+                <span>Responsive Layout</span>
+              </div>
+            </div>
           </div>
-          <div class="hero-metrics">
-            <div class="metric-card">
-              <strong>3</strong>
-              <span>Featured Projects</span>
+
+          <div class="hero-panel card">
+            <div class="profile-top">
+              <div class="avatar">EW</div>
+              <div>
+                <h2>Edward Williams</h2>
+                <p>Software Engineer Candidate</p>
+              </div>
             </div>
-            <div class="metric-card">
-              <strong>8+</strong>
-              <span>Core Technologies</span>
-            </div>
-            <div class="metric-card">
-              <strong>100%</strong>
-              <span>Responsive Layout</span>
+            <ul class="info-list">
+              <li>
+                <span>Job Target</span
+                ><strong>Backend / Full Stack / Web Developer</strong>
+              </li>
+              <li><span>Email</span><strong>byhyjtf386@hotmail.com</strong></li>
+              <li>
+                <span>GitHub</span><strong>github.com/Kingsdom005</strong>
+              </li>
+              <li>
+                <span>Portfolio</span><strong>kingsdom005.github.io</strong>
+              </li>
+            </ul>
+            <div class="tag-group">
+              <span>JavaScript</span>
+              <span>HTML/CSS</span>
+              <span>GitHub Pages</span>
+              <span>Responsive UI</span>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="hero-panel card">
-          <div class="profile-top">
-            <div class="avatar">EW</div>
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-label">About Me</span>
+            <h2>面向求职展示的信息表达</h2>
+            <p>
+              这一版内容更适合程序员求职主页，重点体现技术能力、项目经历、工程思维与可交付成果。
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <article class="card soft-card">
+              <h3>技术定位</h3>
+              <p>
+                以 Web
+                开发与工程实现为核心，具备从页面设计、功能实现到部署展示的完整实践能力，
+                能独立完成个人作品集、管理后台和展示型项目的开发与上线。
+              </p>
+            </article>
+            <article class="card soft-card">
+              <h3>工程习惯</h3>
+              <p>
+                重视代码结构、组件复用、可维护性与页面性能，习惯通过分层设计和模块拆分来降低维护成本，
+                提高开发效率与后续迭代质量。
+              </p>
+            </article>
+            <article class="card soft-card">
+              <h3>求职优势</h3>
+              <p>
+                能够将“会做”转化为“会展示”。擅长将项目背景、技术方案、个人职责与结果表达得更清楚，
+                让面试官快速理解我的能力边界与成长潜力。
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-label">Projects</span>
+            <h2>精选项目</h2>
+            <p>
+              下面是适合程序员求职展示的项目写法。你后续可以继续替换为自己的真实项目名、仓库链接和更准确的数据结果。
+            </p>
+          </div>
+
+          <div class="project-grid">
+            <article class="card project-card">
+              <div class="project-top">
+                <span class="project-badge">Project 01</span>
+                <h3>Douyin Video Platform</h3>
+              </div>
+              <p>
+                完整的Douyin视频平台系统，包含前台、中台和后台三个核心模块，实现了视频上传、推荐、用户管理等功能。
+              </p>
+              <ul>
+                <li>
+                  前台：基于React开发的用户界面，支持视频浏览、上传、评论和用户管理
+                </li>
+                <li>
+                  中台：基于Python的推荐系统，使用Apache
+                  Flink和Spark处理实时数据
+                </li>
+                <li>
+                  后台：基于Node.js的服务端系统，提供API接口和数据管理功能
+                </li>
+                <li>
+                  使用Redis、HBase和Elasticsearch构建高性能数据存储和检索系统
+                </li>
+                <li>集成Docker和Nginx实现容器化部署和负载均衡</li>
+              </ul>
+              <div class="tag-group">
+                <span>React</span><span>Node.js</span><span>Python</span
+                ><span>Apache Flink</span><span>Redis</span><span>Docker</span>
+              </div>
+            </article>
+
+            <article class="card project-card">
+              <div class="project-top">
+                <span class="project-badge">Project 02</span>
+                <h3>Douyin Frontend Application</h3>
+              </div>
+              <p>
+                基于React的Douyin前台应用，实现了视频播放、用户交互和内容管理功能。
+              </p>
+              <ul>
+                <li>使用React 18和React Router构建单页应用</li>
+                <li>实现视频上传、播放、评论和点赞功能</li>
+                <li>支持用户注册、登录和个人资料管理</li>
+                <li>响应式设计，适配不同设备屏幕</li>
+              </ul>
+              <div class="tag-group">
+                <span>React</span><span>React Router</span><span>Axios</span
+                ><span>Vite</span><span>Responsive Design</span>
+              </div>
+            </article>
+
+            <article class="card project-card">
+              <div class="project-top">
+                <span class="project-badge">Project 03</span>
+                <h3>Recommendation Middle Platform</h3>
+              </div>
+              <p>基于Python的推荐中台系统，为Douyin平台提供智能推荐服务。</p>
+              <ul>
+                <li>使用Apache Flink处理实时用户行为数据</li>
+                <li>基于Redis和HBase构建特征存储系统</li>
+                <li>使用PyTorch训练深度学习推荐模型</li>
+                <li>提供RESTful API接口，支持高并发请求</li>
+                <li>集成Prometheus和Grafana实现系统监控</li>
+              </ul>
+              <div class="tag-group">
+                <span>Python</span><span>Apache Flink</span><span>Redis</span
+                ><span>HBase</span><span>PyTorch</span><span>FastAPI</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-label">Experience</span>
+            <h2>项目与成长经历</h2>
+            <p>
+              建议你后续把这里替换成真实的实习、项目实践、校园开发经历或自由项目经历。
+            </p>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item card">
+              <span class="timeline-date">2025 - Present</span>
+              <h3>Douyin Video Platform Development</h3>
+              <p>
+                独立完成Douyin视频平台的全栈开发，包括前台、中台和后台三个核心模块，实现了视频上传、推荐、用户管理等功能。
+                项目采用微服务架构，使用React、Node.js、Python等技术栈，集成了推荐算法和实时数据处理。
+              </p>
+            </div>
+
+            <div class="timeline-item card">
+              <span class="timeline-date">2024 - 2025</span>
+              <h3>Full Stack Web Development</h3>
+              <p>
+                专注于全栈Web开发技术的学习与实践，掌握了React、Node.js、Python等核心技术栈，
+                构建了多个完整的Web应用，包括个人作品集网站和后台管理系统。
+              </p>
+            </div>
+
+            <div class="timeline-item card">
+              <span class="timeline-date">2023 - 2024</span>
+              <h3>Technical Learning & Engineering Growth</h3>
+              <p>
+                系统学习Web开发基础、数据结构与算法、数据库设计等核心课程，
+                通过项目实践积累工程经验，为后续的全栈开发和系统架构设计打下基础。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-label">Skills</span>
+            <h2>技术栈与能力画像</h2>
+            <p>
+              这里采用更适合程序员求职的分类方式，便于招聘方快速扫描你的能力结构。
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <div class="card skill-card">
+              <h3>Frontend</h3>
+              <p>HTML5, CSS3, JavaScript, React, React Router, Axios, Vite</p>
+            </div>
+            <div class="card skill-card">
+              <h3>Backend</h3>
+              <p>
+                Node.js, Express, MySQL, Redis, JWT Authentication, RESTful APIs
+              </p>
+            </div>
+            <div class="card skill-card">
+              <h3>Data & Recommendation</h3>
+              <p>
+                Python, Apache Flink, Apache Spark, Redis, HBase, Elasticsearch,
+                PyTorch
+              </p>
+            </div>
+            <div class="card skill-card">
+              <h3>DevOps & Tools</h3>
+              <p>Git, GitHub, Docker, Nginx, Prometheus, Grafana, CI/CD</p>
+            </div>
+            <div class="card skill-card">
+              <h3>Engineering</h3>
+              <p>
+                Modular Structure, Maintainability, Reusability, Readability,
+                High Concurrency
+              </p>
+            </div>
+            <div class="card skill-card">
+              <h3>Architecture</h3>
+              <p>
+                Micro-services, Frontend-Middleware-Backend Architecture,
+                Real-time Processing
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-label">Education</span>
+            <h2>教育背景</h2>
+            <p>这里建议你替换成自己的真实学校、专业、毕业时间和主修方向。</p>
+          </div>
+
+          <div class="education-card card">
+            <h3>University / College Name</h3>
+            <p>
+              <strong>Major:</strong> Computer Science / Software Engineering /
+              Related Field
+            </p>
+            <p><strong>Period:</strong> 20XX - 20XX</p>
+            <p>
+              <strong>Highlights:</strong>
+              数据结构、操作系统、数据库、软件工程、Web 开发基础
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="contact-card card">
             <div>
-              <h2>Edward Williams</h2>
-              <p>Software Engineer Candidate</p>
+              <span class="section-label">Contact</span>
+              <h2>欢迎联系我</h2>
+              <p>
+                如果你正在寻找一名具备良好表达能力、工程意识和持续成长潜力的软件开发候选人，
+                欢迎通过邮箱或 GitHub 与我联系。
+              </p>
+            </div>
+            <div class="contact-actions">
+              <a class="btn btn-primary" href="mailto:byhyjtf386@hotmail.com"
+                >Send Email</a
+              >
+              <a
+                class="btn btn-secondary"
+                href="https://github.com/Kingsdom005"
+                target="_blank"
+                rel="noreferrer"
+                >GitHub Profile</a
+              >
             </div>
           </div>
-          <ul class="info-list">
-            <li><span>Job Target</span><strong>Backend / Full Stack / Web Developer</strong></li>
-            <li><span>Email</span><strong>byhyjtf386@hotmail.com</strong></li>
-            <li><span>GitHub</span><strong>github.com/Kingsdom005</strong></li>
-            <li><span>Portfolio</span><strong>kingsdom005.github.io</strong></li>
-          </ul>
-          <div class="tag-group">
-            <span>JavaScript</span>
-            <span>HTML/CSS</span>
-            <span>GitHub Pages</span>
-            <span>Responsive UI</span>
-          </div>
         </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 Edward Williams. Built for interview showcase.</p>
+        <p>Portfolio URL: kingsdom005.github.io</p>
       </div>
-    </section>
+    </footer>
 
-    <section id="about" class="section">
-      <div class="container">
-        <div class="section-heading">
-          <span class="section-label">About Me</span>
-          <h2>面向求职展示的信息表达</h2>
-          <p>这一版内容更适合程序员求职主页，重点体现技术能力、项目经历、工程思维与可交付成果。</p>
-        </div>
-
-        <div class="about-grid">
-          <article class="card soft-card">
-            <h3>技术定位</h3>
-            <p>
-              以 Web 开发与工程实现为核心，具备从页面设计、功能实现到部署展示的完整实践能力，
-              能独立完成个人作品集、管理后台和展示型项目的开发与上线。
-            </p>
-          </article>
-          <article class="card soft-card">
-            <h3>工程习惯</h3>
-            <p>
-              重视代码结构、组件复用、可维护性与页面性能，习惯通过分层设计和模块拆分来降低维护成本，
-              提高开发效率与后续迭代质量。
-            </p>
-          </article>
-          <article class="card soft-card">
-            <h3>求职优势</h3>
-            <p>
-              能够将“会做”转化为“会展示”。擅长将项目背景、技术方案、个人职责与结果表达得更清楚，
-              让面试官快速理解我的能力边界与成长潜力。
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="section">
-      <div class="container">
-        <div class="section-heading">
-          <span class="section-label">Projects</span>
-          <h2>精选项目</h2>
-          <p>下面是适合程序员求职展示的项目写法。你后续可以继续替换为自己的真实项目名、仓库链接和更准确的数据结果。</p>
-        </div>
-
-        <div class="project-grid">
-          <article class="card project-card">
-            <div class="project-top">
-              <span class="project-badge">Project 01</span>
-              <h3>Personal Portfolio Website</h3>
-            </div>
-            <p>
-              基于 GitHub Pages 搭建的个人作品集网站，用于集中展示个人简介、技术栈、项目经历与联系方式，
-              提升简历投递与面试展示效率。
-            </p>
-            <ul>
-              <li>使用 HTML、CSS、JavaScript 实现响应式单页网站</li>
-              <li>采用扁平化视觉风格与卡片式布局，提高信息可读性</li>
-              <li>优化首屏信息表达，让面试官能快速定位核心优势</li>
-              <li>支持后续扩展为多页面作品集或中英文双语站点</li>
-            </ul>
-            <div class="tag-group">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub Pages</span>
-            </div>
-          </article>
-
-          <article class="card project-card">
-            <div class="project-top">
-              <span class="project-badge">Project 02</span>
-              <h3>Admin Dashboard Demo</h3>
-            </div>
-            <p>
-              一个后台管理系统演示项目，聚焦于常见业务场景下的数据展示、模块划分和交互布局，
-              体现前端页面组织与工程实现能力。
-            </p>
-            <ul>
-              <li>梳理页面信息架构，按功能拆分导航、统计、表格与详情模块</li>
-              <li>通过组件化样式设计提升页面一致性和复用性</li>
-              <li>面向实际展示场景优化布局密度和内容层级</li>
-              <li>为后续接入真实接口与权限控制预留结构基础</li>
-            </ul>
-            <div class="tag-group">
-              <span>Dashboard</span><span>UI Design</span><span>Component</span><span>Layout</span>
-            </div>
-          </article>
-
-          <article class="card project-card">
-            <div class="project-top">
-              <span class="project-badge">Project 03</span>
-              <h3>Interview Showcase Hub</h3>
-            </div>
-            <p>
-              一个面向求职和面试演示的统一入口页面，将项目、经历、技能和联系方式聚合，
-              用更专业的方式输出个人技术品牌。
-            </p>
-            <ul>
-              <li>重构简历信息组织方式，减少传统 PDF 简历的阅读阻力</li>
-              <li>突出“技术栈 + 项目职责 + 工程思维 + 交付结果”四类信息</li>
-              <li>便于在投递、内推和线上沟通中直接分享链接</li>
-              <li>支持快速维护和持续更新个人成长轨迹</li>
-            </ul>
-            <div class="tag-group">
-              <span>Portfolio</span><span>Resume</span><span>Showcase</span><span>Branding</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience" class="section">
-      <div class="container">
-        <div class="section-heading">
-          <span class="section-label">Experience</span>
-          <h2>项目与成长经历</h2>
-          <p>建议你后续把这里替换成真实的实习、项目实践、校园开发经历或自由项目经历。</p>
-        </div>
-
-        <div class="timeline">
-          <div class="timeline-item card">
-            <span class="timeline-date">2025 - Present</span>
-            <h3>Independent Developer Practice</h3>
-            <p>
-              持续进行个人项目开发与作品集建设，围绕个人主页、展示型页面与项目整理进行迭代，
-              提升从需求分析、界面实现到上线部署的完整工程能力。
-            </p>
-          </div>
-
-          <div class="timeline-item card">
-            <span class="timeline-date">2024 - 2025</span>
-            <h3>Web Project Development</h3>
-            <p>
-              参与页面开发与展示项目实践，重点提升前端结构设计、UI 表达、响应式布局和 GitHub 协作流程，
-              逐步形成以“清晰表达 + 稳定实现”为核心的开发习惯。
-            </p>
-          </div>
-
-          <div class="timeline-item card">
-            <span class="timeline-date">2023 - 2024</span>
-            <h3>Technical Learning & Engineering Growth</h3>
-            <p>
-              系统学习 Web 开发基础、页面结构与版本管理工具，通过独立练习和作品输出积累工程经验，
-              为后续求职中的项目表达与技术展示打下基础。
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills" class="section">
-      <div class="container">
-        <div class="section-heading">
-          <span class="section-label">Skills</span>
-          <h2>技术栈与能力画像</h2>
-          <p>这里采用更适合程序员求职的分类方式，便于招聘方快速扫描你的能力结构。</p>
-        </div>
-
-        <div class="skills-grid">
-          <div class="card skill-card">
-            <h3>Frontend</h3>
-            <p>HTML5, CSS3, JavaScript, Responsive Design, Component-Based UI</p>
-          </div>
-          <div class="card skill-card">
-            <h3>Backend Awareness</h3>
-            <p>API Design, Service Logic Understanding, Data Flow, Basic System Thinking</p>
-          </div>
-          <div class="card skill-card">
-            <h3>Tools</h3>
-            <p>Git, GitHub, GitHub Pages, VS Code, Basic Deployment Workflow</p>
-          </div>
-          <div class="card skill-card">
-            <h3>Engineering</h3>
-            <p>Modular Structure, Maintainability, Reusability, Readability</p>
-          </div>
-          <div class="card skill-card">
-            <h3>UI & Presentation</h3>
-            <p>Flat Design, Clean Layout, Visual Hierarchy, Interview-Oriented Display</p>
-          </div>
-          <div class="card skill-card">
-            <h3>Communication</h3>
-            <p>Documentation, Project Explanation, Requirement Breakdown, Delivery Thinking</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="education" class="section">
-      <div class="container">
-        <div class="section-heading">
-          <span class="section-label">Education</span>
-          <h2>教育背景</h2>
-          <p>这里建议你替换成自己的真实学校、专业、毕业时间和主修方向。</p>
-        </div>
-
-        <div class="education-card card">
-          <h3>University / College Name</h3>
-          <p><strong>Major:</strong> Computer Science / Software Engineering / Related Field</p>
-          <p><strong>Period:</strong> 20XX - 20XX</p>
-          <p><strong>Highlights:</strong> 数据结构、操作系统、数据库、软件工程、Web 开发基础</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="container">
-        <div class="contact-card card">
-          <div>
-            <span class="section-label">Contact</span>
-            <h2>欢迎联系我</h2>
-            <p>
-              如果你正在寻找一名具备良好表达能力、工程意识和持续成长潜力的软件开发候选人，
-              欢迎通过邮箱或 GitHub 与我联系。
-            </p>
-          </div>
-          <div class="contact-actions">
-            <a class="btn btn-primary" href="mailto:byhyjtf386@hotmail.com">Send Email</a>
-            <a class="btn btn-secondary" href="https://github.com/Kingsdom005" target="_blank" rel="noreferrer">GitHub Profile</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© 2026 Edward Williams. Built for interview showcase.</p>
-      <p>Portfolio URL: kingsdom005.github.io</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
