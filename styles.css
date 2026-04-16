@@ -588,6 +588,17 @@ a {
   display: flex;
   gap: 20px;
   padding: 20px;
+  border-radius: 12px;
+  background: var(--surface);
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(12px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.award-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
 .award-date {
@@ -595,15 +606,24 @@ a {
   color: var(--muted);
   font-weight: 600;
   min-width: 100px;
+  padding-top: 4px;
+}
+
+.award-content {
+  flex: 1;
 }
 
 .award-content h3 {
-  margin: 0 0 4px;
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+  color: var(--text);
 }
 
 .award-content p {
   margin: 0;
   color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.4;
 }
 
 /* 个人评价样式 */
