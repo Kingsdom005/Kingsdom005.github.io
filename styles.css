@@ -577,18 +577,49 @@ a {
   font-size: 0.8rem;
 }
 
-/* 荣誉奖励列表样式 */
-.awards-list {
+/* 荣誉奖励容器样式 */
+.awards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* 荣誉奖励分类样式 */
+.award-category {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
+.category-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.category-title::before {
+  content: "🏆";
+  font-size: 1rem;
+}
+
+/* 荣誉奖励项目样式 */
+.award-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 .award-item {
   display: flex;
   gap: 20px;
-  padding: 20px;
-  border-radius: 12px;
+  padding: 16px;
+  border-radius: 10px;
   background: var(--surface);
   border: 1px solid rgba(255, 255, 255, 0.72);
   box-shadow: var(--shadow);
@@ -607,22 +638,24 @@ a {
   font-weight: 600;
   min-width: 100px;
   padding-top: 4px;
+  flex-shrink: 0;
 }
 
 .award-content {
   flex: 1;
 }
 
-.award-content h3 {
-  margin: 0 0 8px;
-  font-size: 1.1rem;
+.award-content h4 {
+  margin: 0 0 6px;
+  font-size: 1rem;
   color: var(--text);
+  font-weight: 600;
 }
 
 .award-content p {
   margin: 0;
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   line-height: 1.4;
 }
 
