@@ -34,8 +34,16 @@ body {
   position: fixed;
   inset: 0;
   background:
-    radial-gradient(circle at top left, rgba(143, 213, 200, 0.35), transparent 30%),
-    radial-gradient(circle at bottom right, rgba(78, 167, 162, 0.12), transparent 28%);
+    radial-gradient(
+      circle at top left,
+      rgba(143, 213, 200, 0.35),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(78, 167, 162, 0.12),
+      transparent 28%
+    );
   pointer-events: none;
   z-index: -1;
 }
@@ -188,7 +196,10 @@ a {
   padding: 0 20px;
   border-radius: 14px;
   font-weight: 700;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
 }
 
 .btn:hover {
@@ -487,11 +498,83 @@ a {
   line-height: 1.5;
 }
 
-/* 项目四列网格布局 */
-.project-grid-4 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+/* 项目列表布局 */
+.project-list {
+  display: flex;
+  flex-direction: column;
   gap: 22px;
+}
+
+/* 项目卡片样式 */
+.project-card {
+  padding: 24px;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.project-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.project-badge {
+  background: var(--primary);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.project-date {
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.project-tech {
+  margin-bottom: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.project-tech strong {
+  color: var(--text);
+}
+
+.project-tech span {
+  background: var(--bg-soft);
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  color: var(--text);
+}
+
+.project-description {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.project-description li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+  position: relative;
+}
+
+.project-description li::before {
+  content: "▶";
+  position: absolute;
+  left: -20px;
+  color: var(--primary);
+  font-size: 0.8rem;
 }
 
 /* 荣誉奖励列表样式 */
