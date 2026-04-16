@@ -473,13 +473,13 @@ a {
 }
 
 /* 核心技能样式 */
-.skills-container {
+.skills-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 
-.skill-category {
+.skill-card {
   background: var(--surface);
   border: 1px solid rgba(255, 255, 255, 0.72);
   border-radius: var(--radius);
